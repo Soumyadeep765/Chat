@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000; // Use process.env.PORT for Vercel
 app.use(bodyParser.json());
 
 // Endpoint to handle POST requests
-app.post('/api/chat', async (req, res) => {
+app.post('/api', async (req, res) => {
     try {
         const { prompt, content } = req.body; // Extract prompt and content from JSON body
 
